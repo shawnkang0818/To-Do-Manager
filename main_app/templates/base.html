@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,9 +10,10 @@
   <link
     rel="shortcut icon"
     type="image/png"
-    href=""
+    href="{% static 'images/vecteezy_tasks-vector-icon-design_21005811.svg' %}"
   >
   <title>Todo</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
   {% block head %}
   {% endblock %}
 </head>
@@ -20,14 +21,16 @@
   <header>
     <div class="header-logo-container">
       <a href="/">
-        <img 
-          src=""
-          alt=""
+        <img class="logo-image" 
+          src="{% static "images/vecteezy_checklist-vector-icon-design_21237217.svg" %}"
+          alt="a list image"
         >
+        
       </a>
     </div>
     <nav>
       <ul>
+        <li><a href="/tasks">All task</a></li>
         <li><a href="/todotask">To-Do Task</a></li>
       </ul>
     </nav>
@@ -37,4 +40,5 @@
     {% endblock %}
   </main>
 </body>
+
 </html>
