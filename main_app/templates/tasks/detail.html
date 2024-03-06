@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet" 
+  type="text/css" 
+  href="{% static 'css/tasks/task-detail.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+<section class="cat-container">
+  <div class="cat-img">
+    <img 
+      src="{% static 'images/vecteezy_man-ticking-with-pencil_9160089.svg' %}" 
+      alt="A man ticking with pencil"
+    >
+  </div>
+  <div class="cat-details">
+    <h1>{{ task.title }}</h1>
+    <h2>{{ task.priority }} priotity</h2>
+    <p>{{ task.description }}</p>
+  </div>
+</section>
+
+{% endblock %}

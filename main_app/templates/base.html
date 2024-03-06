@@ -30,8 +30,9 @@
     </div>
     <nav>
       <ul>
-        <li><a href="/tasks">All task</a></li>
-        <li><a href="/todotask">To-Do Task</a></li>
+        <li><a href="{% url 'task-index' %}">All task</a></li>
+        <li><a href="{% url 'todo-task' %}">To-Do Task</a></li>
+        <li><a href="{% url 'task-create' %}">Add a Task</a></li>
       </ul>
     </nav>
   </header>
