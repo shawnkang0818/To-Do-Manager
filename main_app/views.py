@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+from django.contrib.auth.views import LoginView
 from .models import Task
 
 # Add the Task class & list and view function below the imports
@@ -17,8 +18,8 @@ from .models import Task
 
 # Create your views here.
 # home view
-def home(request):
-  return render(request, 'home.html')
+class Home(LoginView):
+  template_name = 'home.html'
 
 def todo_task(request):
   return render(request, 'todotask.html')
