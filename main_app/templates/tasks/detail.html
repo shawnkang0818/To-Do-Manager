@@ -22,6 +22,10 @@
     <h1>{{ task.title }}</h1>
     <h2>{{ task.priority }} priotity</h2>
     <p>{{ task.description }}</p>
+    <div class="cat-actions">
+      <a href="{% url 'task-update' task.id %}" class="btn warn">Edit</a>
+      <a href="{% url 'task-delete' task.id %}" class="btn danger">Delete</a>
+    </div>
   </div>
 </section>
 

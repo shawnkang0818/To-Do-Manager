@@ -8,7 +8,11 @@
 {% block content %}
 
 <div class="page-header">
-  <h1>Add a Task</h1>
+  {% if task %}
+    <h1>Edit Task</h1>
+  {% else %}
+    <h1>Add a Task</h1>
+  {% endif %}
   <img src="{% static 'images/nerd-cat.svg' %}" alt="A cat using a computer"/>
 </div>
 

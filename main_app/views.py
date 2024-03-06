@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Task
 
 # Add the Task class & list and view function below the imports
@@ -36,4 +36,13 @@ def task_detail(request, task_id):
 class TaskCreate(CreateView):
   model = Task
   fields = '__all__'
+  success_url = '/tasks/'
+
+class TaskUpdate(UpdateView):
+  model = Task
+  # Let's disallow the renaming of a task by excluding the name field!
+  fields = ['title', 'priority', 'description']
+
+class TaskDelete(DeleteView):
+  model = Task
   success_url = '/tasks/'
