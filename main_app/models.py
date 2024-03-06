@@ -1,4 +1,6 @@
 from django.db import models
+from django.urls import reverse
+
 
 # Create models
 class Task(models.Model):
@@ -8,3 +10,6 @@ class Task(models.Model):
 
   def __str__(self):
     return self.title
+  
+  def get_absolute_url(self):
+    return reverse('task-detail', kwargs={'task_id': self.id})

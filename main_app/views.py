@@ -36,3 +36,4 @@ def task_detail(request, task_id):
 class TaskCreate(CreateView):
   model = Task
   fields = '__all__'
+  success_url = '/tasks/'
