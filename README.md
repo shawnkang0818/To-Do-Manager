@@ -24,7 +24,7 @@ To-Do Manager is a robust and user-friendly web application designed to streamli
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)
 ![Fly.io](https://img.shields.io/badge/Fly.io%20-%20purple)
-
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ---
 ## Ice Box 🧊
 - [ ] Task Completion Tracking: allows users to track their task completion progress effortlessly. By marking tasks as completed, users can visualize their achievements and stay motivated to accomplish their goals.
